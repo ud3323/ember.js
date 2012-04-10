@@ -11,7 +11,8 @@
     "ember-runtime": "0.9.7.1",
     "ember-views": "0.9.7.1",
     "ember-states": "0.9.7.1",
-    "ember-handlebars": "0.9.7.1"
+    "ember-handlebars": "0.9.7.1",
+    "ember-handlebars-format": "0.9.3"
   },
 
   "directories": {
@@ -22,6 +23,13 @@
     "bpm_libs.js": {
       "files": ["lib"],
       "modes": "*"
+    }
+  },
+
+  "bpm:provides": {
+    "format:handlebars": {
+      "mime:default": "application/javascript",
+      "main": "ember-handlebars-format/format" 
     }
   }
 }
